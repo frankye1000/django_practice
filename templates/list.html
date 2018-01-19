@@ -1,0 +1,26 @@
+<!-- list.html-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>old items</title>
+</head>
+<body>
+<h2>product list</h2>
+<hr>
+<table width=400 border=1 bgcolor='#ccffcc'>
+	<tr> 
+		<td>name</td> 
+		<td>price</td> 
+		<td>sku</td> 
+	</tr>'
+{% for p in products %}
+	<tr>
+		<td>{{p.name}}</td>
+		<td>{{p.price}}</td>
+		<td>{{p.sku}}</td>
+	</tr>
+{% endfor %}
+</table>
+</body>
+</html> 
+	
